@@ -1,0 +1,79 @@
+{
+  "chats": [
+    {
+      "name": "Onboarding Conversation",
+      "date": "2025-04-01",
+      "messages": [
+        {
+          "source": "system",
+          "text": "Hi! 👋 Welcome to Statt. Ready to get started?"
+        },
+        {
+          "source": "user",
+          "text": "Yes, what can I do here?"
+        },
+        {
+          "source": "system",
+          "text": "I can help you explore product usage, recent updates, and support resources."
+        }
+      ],
+      "sources": [
+        {
+          "sourceType": "documentation",
+          "title": "Statt User Guide",
+          "url": "https://example.com/docs/user-guide"
+        }
+      ]
+    },
+    {
+      "name": "Bug Report - Dashboard Error",
+      "date": "2025-04-03",
+      "messages": [
+        {
+          "source": "user",
+          "text": "My dashboard isn't loading correctly after I updated my plan."
+        },
+        {
+          "source": "system",
+          "text": "Thanks for reporting that. Can you tell me what browser you're using?"
+        },
+        {
+          "source": "user",
+          "text": "Chrome, on macOS."
+        },
+        {
+          "source": "system",
+          "text": "Got it. This could be related to caching — try clearing your cache and reloading."
+        }
+      ],
+      "sources": [
+        {
+          "sourceType": "troubleshooting_guide",
+          "title": "Fix Dashboard Load Issues",
+          "url": "https://example.com/help/dashboard-fix"
+        }
+      ]
+    },
+    {
+      "name": "Feature Request - Dark Mode",
+      "date": "2025-04-04",
+      "messages": [
+        {
+          "source": "user",
+          "text": "Is there a dark mode available?"
+        },
+        {
+          "source": "system",
+          "text": "That's a popular request! We're actively working on it — stay tuned."
+        }
+      ],
+      "sources": [
+        {
+          "sourceType": "roadmap",
+          "title": "Upcoming Features",
+          "url": "https://example.com/roadmap"
+        }
+      ]
+    }
+  ]
+}
