@@ -1,12 +1,17 @@
 import React from 'react';
-import chatData from '../data/chats.json';
+import { useChatData } from '../hooks/useChatData';
 
 interface ChatWindowProps {
   chatIndex: number;
 }
 
 const ChatWindow: React.FC<ChatWindowProps> = ({ chatIndex }) => {
-  const chat = chatData.chats[chatIndex];
+  const { chats, error } = useChatData();
+
+  if (error) return <div className="error">Could not load chat: {error}</div>;
+  const chat = chats[chatIndex];
+
+  if (!chat) return <div>No chat found.</div>;
 
   return (
     <div className="chat-window">
